@@ -1,0 +1,23 @@
+{
+  "name": "assignment-portfolio-jdf",
+  "version": "1.0.0",
+  "description": "assignment portfolio nodejs project",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelfeddes/assignment-portfolio-jdf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelfeddes/assignment-portfolio-jdf/issues"
+  },
+  "homepage": "https://github.com/joelfeddes/assignment-portfolio-jdf#readme"
+}
