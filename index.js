@@ -17,7 +17,7 @@ const server = http.createServer((request, response) => {
     response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/regex'>Regex</a><br>")
 
     // Close the response
-    response.end("<h3>'That's all for now. I'll be adding more content shortly.'</h3>");
+    response.end("<h3>That's all for now. I'll be adding more content shortly.</h3>");
 });
 
 const port = process.env.PORT || 1337;
