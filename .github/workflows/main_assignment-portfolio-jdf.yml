@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'assignment-portfolio-jdf'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_13F45B14BE784557A7CFE8B3E462E548 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1A0F235BB84B4C19B85453FA97146E73 }}
           package: .
