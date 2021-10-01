@@ -15,14 +15,9 @@ const server = http.createServer((request, response) => {
     response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/'>Resume</a><br>")
     response.write("<a href='https://calm-sea-0c9111010.azurestaticapps.net/'>Dice Game</a><br>")
     response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/regex'>Regex</a><br>")
-    response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/'>Resume</a><br>")
-
-
-    // Show the url. 
-    response.write("req.url="+request.url+"<br><br>");
 
     // Close the response
-    response.end("<h3>'That's all for now. Adding more localStorage.'</h3>");
+    response.end("<h3>'That's all for now. I'll be adding more content shortly.'</h3>");
 });
 
 const port = process.env.PORT || 1337;
