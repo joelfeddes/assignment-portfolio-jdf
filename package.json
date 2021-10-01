@@ -1,25 +1,11 @@
 {
-  "name": "assignment-portfolio-jdf",
-  "version": "1.0.0",
-  "description": "Assignment Portfolio with nodejs",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "mocha": "^9.1.2"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joelfeddes/assignment-portfolio-jdf.git"
-  },
-  "author": "Microsoft",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joelfeddes/assignment-portfolio-jdf/issues"
-  },
-  "homepage": "https://github.com/joelfeddes/assignment-portfolio-jdf#readme"
+    "name": "assignment-portfolio-jdf",
+    "description": "Web assignment portfolio intended to show off projects",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "scripts": {
+        "start": "node index.js"
+    }
 }
