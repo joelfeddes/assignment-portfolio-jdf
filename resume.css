@@ -1,0 +1,43 @@
+
+#PageHeader {text-align: center;}
+#Center {text-align: center;}
+/*Wraps resume to limit width of resume*/
+#ResumeWrap{
+    max-width: 150em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*Constructs the "line" used for the primary headers of my resume*/
+hr {
+    border: 1px solid black;
+  }
+
+  /*Aligns text left and indents 20px to effectively provide a tab-like indentation*/
+.Indentation{
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*implements and indents a sub-bullet for a bulleted list.*/
+#SubBullet{
+    list-style-type: circle;
+    padding-bottom: 0;
+    margin-left:20px;
+}
+
+/*wraps lines with over 100 characters*/
+.WordWrap{
+    max-width: 100em;
+}
+
+/*Aligns texts to the left of page with a margin of 10px from the left-most side.*/
+.AlignLeft{
+    text-align: left;
+    margin-left: 10px;
+}
+
+/*Aligns texts to the right of page with a margin of 10px from the right-most side.*/
+.AlignRight{
+    float:right;
+    margin-right: 10px;
+}

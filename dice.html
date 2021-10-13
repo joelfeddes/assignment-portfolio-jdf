@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Joel Feddes' Dice Roller</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <!--
+        Author: Joel Feddes
+        Professor: THEE Eric Pogue
+        Class: CPSC 44000
+        Assignment: Dice Roller
+    -->
+    <body class = "Center" onload = "RollSixSidedDice()">
+        <h1>Joel's Dice Matching Game</h1>
+        <button  class = "Button" type="button" onclick="RollSixSidedDice()" autofocus>Toss Dice</button><br><br>
+        <h3>Results:</h3>
+        <input class = "BoxFormatting" id="dice"  type ="text" value="" size="5" disabled>
+        <input class = "BoxFormatting" id="dice2" type="text" value="" size="5" disabled><br><br>
+        <b>Match Check:</b> 
+        <input id = "match"  disabled><br>
+        <br><br>
+        <button  class = "Button" type="button" onclick="SendHelp()">Help</button><br><br>
+        <input class = "HelpBox" id = "help" size = "50" disabled>
+    </body>
+</html>
