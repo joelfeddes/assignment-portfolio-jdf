@@ -12,9 +12,9 @@ app.set('view engine', 'handlebars')
 const port = process.env.PORT || 1337;
 
 
-//app.get('/', (req, res) => res.render('home')) 
+app.get('/', (req, res) => res.render('index')) 
 
-//app.get('/about', (req, res) => {
+//app.get('/views', (req, res) => {
 //})
 
 
