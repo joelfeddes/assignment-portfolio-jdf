@@ -7,16 +7,13 @@ const app = express()
 app.engine('handlebars', expressHandlebars({
   defaultLayout: 'index',
 }))
+app.use(express.static(__dirname + "/styling"))
 app.set('view engine', 'handlebars')
 
 const port = process.env.PORT || 3000;
 
 
 app.get('/', (req, res) => res.render('index')) 
-
-app.get('/views', (req, res) => {
-})
-
 
 app.listen(port, () => {
   console.log( `Express started on http://localhost:${port}` +
