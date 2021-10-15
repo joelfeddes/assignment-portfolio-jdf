@@ -1,26 +1,24 @@
-var http = require('http');
-const { networkInterfaces } = require('os');
-var url = require('url');
+const express = require('express')
+const expressHandlebars = require('express-handlebars')
 
-const server = http.createServer((request, response) => {
-    // Write the request to the log. 
-    console.log(request);
+const app = express()
 
-    // Standard Hello World.
-    response.writeHead(200, {'Content-Type': 'text/html'});
-
-    response.write("<h1>Joel Feddes</h1>")
-    response.write("<h3>Web based Assignments:</h3>")
-    response.write("<a href='https://purple-beach-003a02a10.azurestaticapps.net/'>Getting to Know Eachother</a><br>")
-    response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/'>Resume</a><br>")
-    response.write("<a href='https://calm-sea-0c9111010.azurestaticapps.net/'>Dice Game</a><br>")
-    response.write("<a href='https://gray-rock-0f51c6610.azurestaticapps.net/regex'>Regex</a><br>")
-
-    // Close the response
-    response.end("<h3>That's all for now. I'll be adding more content shortly.</h3>");
-});
+// configure Handlebars view engine
+app.engine('handlebars', expressHandlebars({
+  defaultLayout: 'index',
+}))
+app.set('view engine', 'handlebars')
 
 const port = process.env.PORT || 1337;
-server.listen(port);
 
-console.log("Server running at http://localhost:%d", port);
+
+//app.get('/', (req, res) => res.render('home')) 
+
+//app.get('/about', (req, res) => {
+//})
+
+
+app.listen(port, () => {
+  console.log( `Express started on http://localhost:${port}` +
+    '; press Ctrl-C to terminate.' )
+})
