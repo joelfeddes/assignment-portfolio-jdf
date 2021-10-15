@@ -9,13 +9,13 @@ app.engine('handlebars', expressHandlebars({
 }))
 app.set('view engine', 'handlebars')
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 3000;
 
 
 app.get('/', (req, res) => res.render('index')) 
 
-//app.get('/views', (req, res) => {
-//})
+app.get('/views', (req, res) => {
+})
 
 
 app.listen(port, () => {
